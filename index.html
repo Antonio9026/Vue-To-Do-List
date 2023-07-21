@@ -31,16 +31,15 @@
 
             <ul>
                 <!-- Task element -->
-                <li class="task"
-                 v-for="(tasks, i) in tasks"
-                >
+                <li class="task" v-for="(tasks, i) in tasks"
+                v-bind:class= " tasks.done ? 'doneTask' :''">
 
-                    <!-- Task text (from input) -->
-                    <span>
+
+                    <span >
                         {{ tasks.text }}
                     </span>
 
-                    <!-- "x" delete button -->
+
                     <button>
                         <i class="fa-solid fa-xmark"></i>
                     </button>

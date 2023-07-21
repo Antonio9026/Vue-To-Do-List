@@ -9,7 +9,7 @@ const app = Vue.createApp({
                 }, {
                     id: 2,
                     text: "to-do esempio 2",
-                    done: true
+                    done: false
                 }, {
                     id: 3,
                     text: "to-do esempio 3",
@@ -17,7 +17,7 @@ const app = Vue.createApp({
                 }, {
                     id: 4,
                     text: "to-do esempio 4",
-                    done: true
+                    done: false
                 }, {
                     id: 5,
                     text: "to-do esempio 5",
