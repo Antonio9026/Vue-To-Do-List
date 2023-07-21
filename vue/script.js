@@ -54,6 +54,7 @@ const app = Vue.createApp({
             const cloneTask = {...this.newTask};
             this.tasks.push(cloneTask);
         },
+        
 
     },
 });
