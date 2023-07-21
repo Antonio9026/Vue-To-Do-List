@@ -54,7 +54,13 @@ const app = Vue.createApp({
             const cloneTask = {...this.newTask};
             this.tasks.push(cloneTask);
         },
-        
+
+        // creo funzione per taskItem done/al click se è false diventa true e viceversa in modo da cambiare la classe
+        ifDoneUnDone(i){
+            this.tasks[i].done = !this.tasks[i].done;
+
+        }
+
 
     },
 });
@@ -65,5 +71,3 @@ app.mount("#app")
 
 
 
-// MILESTONE 3
-// Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.

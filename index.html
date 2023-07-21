@@ -34,8 +34,9 @@
 
             <ul>
                 <!-- Task element -->
-                <li class="task" v-for="tasksItem in tasks"
-                v-bind:class= " tasksItem.done ? 'doneTask' :''">
+                <li class="task" v-for="(tasksItem,i) in tasks"
+                v-bind:class= " tasksItem.done ? 'doneTask' :''"
+                @click="ifDoneUnDone(i)">
 
 
                     <span >
