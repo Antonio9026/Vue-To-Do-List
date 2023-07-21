@@ -24,19 +24,12 @@ button {
     padding: 20px;
 }
 
-
-
-
 .doneTask {
     text-decoration: line-through;
     background-color: beige;
 }
 
-
-
-
-
-.newTask {
+.newtask {
     margin: 20px;
     width: 50%;
 }

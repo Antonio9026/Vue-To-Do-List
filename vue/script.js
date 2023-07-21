@@ -1,6 +1,11 @@
 const app = Vue.createApp({
     data() {
         return {
+            newTask: {
+                id: "",
+                text: "",
+                done: false
+            },
 
             tasks: [
 
@@ -24,7 +29,7 @@ const app = Vue.createApp({
                     id: 5,
                     text: "to-do esempio 5",
                     done: true
-                }
+                },
             ],
 
         };
@@ -43,7 +48,21 @@ const app = Vue.createApp({
             this.tasks.splice(indexToDElete, 1)
         },
 
+        //  funzione pr aggiungere la task 
+        addTask() {
+            // creo un clone dell'oggetto in modo da perdere la reattività§
+            const cloneTask = {...this.newTask};
+            this.tasks.push(cloneTask);
+        },
+
     },
 });
 console.log(app);
 app.mount("#app")
+
+
+
+
+
+// MILESTONE 3
+// Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.
