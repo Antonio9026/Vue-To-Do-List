@@ -51,12 +51,12 @@ const app = Vue.createApp({
         //  funzione pr aggiungere la task 
         addTask() {
             // creo un clone dell'oggetto in modo da perdere la reattività§
-            const cloneTask = {...this.newTask};
+            const cloneTask = { ...this.newTask };
             this.tasks.push(cloneTask);
         },
 
         // creo funzione per taskItem done/al click se è false diventa true e viceversa in modo da cambiare la classe
-        ifDoneUnDone(i){
+        ifDoneUnDone(i) {
             this.tasks[i].done = !this.tasks[i].done;
 
         }
