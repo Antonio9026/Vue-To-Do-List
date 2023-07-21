@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link  libreria Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- link vue -->
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app" class="container">
+
+        <!-- OUTPUT TASK -->
+        <div class="taskContainer">
+            <!-- INPUT TASK -->
+            <div class="newTask">
+                <input type="text" placeholder="Nuova task">
+                <button type="submit">Aggiungi</button>
+            </div>
+
+            <ul>
+                <!-- Task element -->
+                <li class="task"
+                 v-for="(tasks, i) in tasks"
+                >
+
+                    <!-- Task text (from input) -->
+                    <span>
+                        {{ tasks.text }}
+                    </span>
+
+                    <!-- "x" delete button -->
+                    <button>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                </li>
+
+        </div>
+    </div>
+    <script src="vue/script.js"></script>
+</body>
+
+</html>
