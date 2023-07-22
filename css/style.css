@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(https://cdn.hovia.com/app/uploads/whitewash-wood-texture-plain-820x532.jpg);
 }
 
 img {
@@ -13,43 +14,57 @@ img {
 }
 
 button {
+
+    height: 25px;
+    border-radius: 6px;
+    margin-left: 10px;
+    background-color: burlywood;
+    border-radius: burlywood;
     cursor: pointer;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
 }
 
 .container {
     width: 70%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     text-align: center;
-    padding: 20px;
+    padding: 60px;
 }
 
 .doneTask {
     text-decoration: line-through;
-    background-color: beige;
+    background-color: burlywood;
+    border-radius: 5px 15px 5px 15px;
 }
 
 .newtask {
-    margin: 20px;
-    width: 50%;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
-.newTask input,
+
 .newTask button {
-    border-radius: 7px;
+    border-radius: 10px;
     padding: 5px;
     margin: 5px;
 }
 
-.newTask input {
-    width: 60%;
+input {
+    width: 320px;
 }
 
 .taskContainer ul {
-    width: 50%;
+    width: 400px;
     list-style-type: none;
     text-align: left;
-    background-color: #38648f;
+    background-image: url(https://media.gettyimages.com/id/116772376/photo/notepad-to-do-list-get-things-done.jpg?s=612x612&w=gi&k=20&c=4Xie-2oANu7Na0ZWrzdhG5y0eoFZjh-hKHnaGDt-qsM=);
+    background-size: cover;
+    object-fit: cover;
     padding: 25px;
     border-radius: 10px;
 }
